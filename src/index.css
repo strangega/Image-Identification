@@ -1,13 +1,140 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  margin:0;
+  padding: 0;
+  /* font-size: 1.7vw; */
+}
+.load{
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 0;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background-color: antiquewhite;
+  padding: 0px;
+  min-height: 100vh;
+}
+.Header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  font-size: 4rem;
+  font-weight: 100;
+  color: aliceblue;
+  margin-bottom: 1.5%;
+  padding: 1%;
+}
+.inputHolder{
+  display: flex;
+  gap: 2vw;
+  justify-content: flex-start;
+  margin-right: 4vw;
+}
+
+.mainWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  margin-top: 1%;
+  /* margin-left: 6%; */
+  padding: 2%;
+}
+.imageholder{
+  width:100%;
+  height:50% ;
+  display: flex;
+  gap:4vw;
+  overflow: hidden;
+  margin-bottom: 2vh;
+  
+
+}
+.Img {
+  width: 30vw;
+  height: 30vw;
+  object-fit: contain;
+}
+.button{
+  width: fit-content;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.8%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 1%;
+  margin-top: 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover{
+  cursor: pointer;
+}
+.ResultDisplay{
+  /* border: 2px solid brown; */
+  margin-top: 5%;
+  /* margin-left: 3vw; */
+  width: max-content;
+  margin-right: 2vw;  
+}
+.result{
+  background-color: aliceblue;
+  margin: 2%;
+  width: 100%;
+  border: 2px solid black;
+  padding: 1%;
+  display: flex;
+  line-height: 120%;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.res0{
+  background-color: black;
+  color: aliceblue;
+
+}
+.bestGuess{
+  background-color: white;
+  color: black;
+  border:0.2px solid black;
+  margin: 2%;
+  align-self: self-end;
+  margin-top: 0.1%;
+}
+.confidence{
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  width: 47vw;
+  height:auto ;
+}
+.uploadInp{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.recent{
+  display:flex;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+.histImg{
+  width: 15vw;
+  height: 15vw;
+  object-fit: contain;
+}
+.histImg:hover{
+  cursor: pointer;
 }
